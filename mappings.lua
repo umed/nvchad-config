@@ -5,6 +5,7 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<C-p>"] = { "<cmd> Telescope find_files <CR>", "Find files" },
+    ["<C-c>"] = { "<Esc>", "" },
     ["<C-_>"] = {
       function()
         require("Comment.api").toggle.linewise.current()
